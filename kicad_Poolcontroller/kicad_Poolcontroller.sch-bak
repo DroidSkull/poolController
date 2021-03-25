@@ -1,0 +1,363 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC595 U?
+U 1 1 601F13DC
+P 4550 1400
+F 0 "U?" H 4550 2181 50  0000 C CNN
+F 1 "74HC595" H 4550 2090 50  0000 C CNN
+F 2 "" H 4550 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4550 1400 50  0001 C CNN
+	1    4550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85V-10PU U?
+U 1 1 601F2825
+P 3150 1400
+F 0 "U?" H 2620 1446 50  0000 R CNN
+F 1 "ATtiny85V-10PU" H 2620 1355 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3150 1400 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 3150 1400 50  0001 C CNN
+	1    3150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q5
+U 1 1 601F3838
+P 6850 2000
+F 0 "Q5" H 7040 2000 50  0000 L CNN
+F 1 "2N2219" H 7040 1955 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 7050 1925 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 6850 2000 50  0001 L CNN
+	1    6850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q6
+U 1 1 601F4505
+P 7700 2000
+F 0 "Q6" H 7890 2000 50  0000 L CNN
+F 1 "2N2219" H 7890 1955 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 7900 1925 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 7700 2000 50  0001 L CNN
+	1    7700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q7
+U 1 1 601F62F4
+P 8550 2000
+F 0 "Q7" H 8740 2000 50  0000 L CNN
+F 1 "2N2219" H 8740 1955 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 8750 1925 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 8550 2000 50  0001 L CNN
+	1    8550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q8
+U 1 1 601F63AE
+P 9400 2000
+F 0 "Q8" H 9590 2000 50  0000 L CNN
+F 1 "2N2219" H 9590 1955 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 9600 1925 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 9400 2000 50  0001 L CNN
+	1    9400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q1
+U 1 1 601F8ED2
+P 6600 1500
+F 0 "Q1" H 6790 1500 50  0000 L CNN
+F 1 "2N2219" H 6790 1455 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 6800 1425 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 6600 1500 50  0001 L CNN
+	1    6600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q2
+U 1 1 601F8FC8
+P 7450 1500
+F 0 "Q2" H 7640 1500 50  0000 L CNN
+F 1 "2N2219" H 7640 1455 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 7650 1425 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 7450 1500 50  0001 L CNN
+	1    7450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q3
+U 1 1 601F8FD2
+P 8300 1500
+F 0 "Q3" H 8490 1500 50  0000 L CNN
+F 1 "2N2219" H 8490 1455 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 8500 1425 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 8300 1500 50  0001 L CNN
+	1    8300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q4
+U 1 1 601F8FDC
+P 9150 1500
+F 0 "Q4" H 9340 1500 50  0000 L CNN
+F 1 "2N2219" H 9340 1455 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 9350 1425 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 9150 1500 50  0001 L CNN
+	1    9150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 601FFF88
+P 5500 1750
+F 0 "R5" H 5570 1796 50  0000 L CNN
+F 1 "1k" H 5570 1705 50  0000 L CNN
+F 2 "" V 5430 1750 50  0001 C CNN
+F 3 "~" H 5500 1750 50  0001 C CNN
+	1    5500 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60200128
+P 5500 1500
+F 0 "R6" H 5570 1546 50  0000 L CNN
+F 1 "1k" H 5570 1455 50  0000 L CNN
+F 2 "" V 5430 1500 50  0001 C CNN
+F 3 "~" H 5500 1500 50  0001 C CNN
+	1    5500 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 60200132
+P 5500 1250
+F 0 "R7" H 5570 1296 50  0000 L CNN
+F 1 "1k" H 5570 1205 50  0000 L CNN
+F 2 "" V 5430 1250 50  0001 C CNN
+F 3 "~" H 5500 1250 50  0001 C CNN
+	1    5500 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 6020013C
+P 5500 1000
+F 0 "R8" H 5570 1046 50  0000 L CNN
+F 1 "1k" H 5570 955 50  0000 L CNN
+F 2 "" V 5430 1000 50  0001 C CNN
+F 3 "~" H 5500 1000 50  0001 C CNN
+	1    5500 1000
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5700 2000 2    50   Input ~ 0
+Q4
+Text GLabel 5700 2250 2    50   Input ~ 0
+Q3
+Text GLabel 5700 2500 2    50   Input ~ 0
+Q2
+Wire Wire Line
+	5650 2750 5700 2750
+Text GLabel 5700 2750 2    50   Input ~ 0
+Q1
+$Comp
+L Device:R R4
+U 1 1 601FEFFE
+P 5500 2000
+F 0 "R4" H 5570 2046 50  0000 L CNN
+F 1 "1k" H 5570 1955 50  0000 L CNN
+F 2 "" V 5430 2000 50  0001 C CNN
+F 3 "~" H 5500 2000 50  0001 C CNN
+	1    5500 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 601FEE7E
+P 5500 2250
+F 0 "R3" H 5570 2296 50  0000 L CNN
+F 1 "1k" H 5570 2205 50  0000 L CNN
+F 2 "" V 5430 2250 50  0001 C CNN
+F 3 "~" H 5500 2250 50  0001 C CNN
+	1    5500 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 601FE22D
+P 5500 2500
+F 0 "R2" H 5570 2546 50  0000 L CNN
+F 1 "1k" H 5570 2455 50  0000 L CNN
+F 2 "" V 5430 2500 50  0001 C CNN
+F 3 "~" H 5500 2500 50  0001 C CNN
+	1    5500 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 601FD731
+P 5500 2750
+F 0 "R1" H 5570 2796 50  0000 L CNN
+F 1 "1k" H 5570 2705 50  0000 L CNN
+F 2 "" V 5430 2750 50  0001 C CNN
+F 3 "~" H 5500 2750 50  0001 C CNN
+	1    5500 2750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5700 1750 2    50   Input ~ 0
+Q5
+Text GLabel 5700 1500 2    50   Input ~ 0
+Q6
+Text GLabel 5700 1250 2    50   Input ~ 0
+Q7
+Text GLabel 5700 1000 2    50   Input ~ 0
+Q8
+Wire Wire Line
+	5300 1100 5300 1250
+Wire Wire Line
+	5300 1250 5350 1250
+Wire Wire Line
+	5250 1200 5250 1500
+Wire Wire Line
+	5250 1500 5350 1500
+Wire Wire Line
+	5200 1300 5200 1750
+Wire Wire Line
+	5200 1750 5350 1750
+Wire Wire Line
+	4950 1000 5350 1000
+Wire Wire Line
+	4950 1100 5300 1100
+Wire Wire Line
+	4950 1200 5250 1200
+Wire Wire Line
+	4950 1300 5200 1300
+Wire Wire Line
+	4950 1400 5150 1400
+Wire Wire Line
+	5150 1400 5150 2000
+Wire Wire Line
+	5150 2000 5350 2000
+Wire Wire Line
+	4950 1500 5100 1500
+Wire Wire Line
+	5100 1500 5100 2250
+Wire Wire Line
+	5100 2250 5350 2250
+Wire Wire Line
+	4950 1600 5050 1600
+Wire Wire Line
+	5050 1600 5050 2500
+Wire Wire Line
+	5050 2500 5350 2500
+Wire Wire Line
+	4950 1700 5000 1700
+Wire Wire Line
+	5000 1700 5000 2750
+Wire Wire Line
+	5000 2750 5350 2750
+Wire Wire Line
+	5650 1000 5700 1000
+Wire Wire Line
+	5650 1250 5700 1250
+Wire Wire Line
+	5650 1500 5700 1500
+Wire Wire Line
+	5650 1750 5700 1750
+Wire Wire Line
+	5650 2000 5700 2000
+Wire Wire Line
+	5650 2250 5700 2250
+Wire Wire Line
+	5650 2500 5700 2500
+Text GLabel 7200 1500 0    50   Input ~ 0
+Q2
+Text GLabel 6350 1500 0    50   Input ~ 0
+Q1
+Text GLabel 8050 1500 0    50   Input ~ 0
+Q3
+Text GLabel 8900 1500 0    50   Input ~ 0
+Q4
+Text GLabel 6600 2000 0    50   Input ~ 0
+Q5
+Text GLabel 7450 2000 0    50   Input ~ 0
+Q6
+Text GLabel 8300 2000 0    50   Input ~ 0
+Q7
+Text GLabel 9150 2000 0    50   Input ~ 0
+Q8
+$Comp
+L pspice:0 #GND?
+U 1 1 6028386E
+P 6350 1750
+F 0 "#GND?" V 6350 1794 50  0001 L CNN
+F 1 "0" V 6350 1794 50  0001 L CNN
+F 2 "" H 6350 1750 50  0001 C CNN
+F 3 "~" H 6350 1750 50  0001 C CNN
+	1    6350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:0 #GND?
+U 1 1 60285810
+P 6350 2250
+F 0 "#GND?" V 6350 2294 50  0001 L CNN
+F 1 "0" V 6350 2294 50  0001 L CNN
+F 2 "" H 6350 2250 50  0001 C CNN
+F 3 "~" H 6350 2250 50  0001 C CNN
+	1    6350 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 60286526
+P 6700 1000
+F 0 "#PWR?" H 6700 850 50  0001 C CNN
+F 1 "+12V" H 6715 1173 50  0000 C CNN
+F 2 "" H 6700 1000 50  0001 C CNN
+F 3 "" H 6700 1000 50  0001 C CNN
+	1    6700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K1
+U 1 1 602923FD
+P 5850 3750
+F 0 "K1" H 6280 3750 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 6280 3705 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6300 3700 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5850 3750 50  0001 C CNN
+	1    5850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D1
+U 1 1 60293DD3
+P 5250 3750
+F 0 "D1" V 5250 3830 50  0000 L CNN
+F 1 "1N4007" V 5295 3830 50  0001 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5250 3575 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5250 3750 50  0001 C CNN
+	1    5250 3750
+	0    1    1    0   
+$EndComp
+Text GLabel 6600 2500 0    50   Input ~ 0
+K1
+$EndSCHEMATC

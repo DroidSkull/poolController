@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Pool_Controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,22 +15,22 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 74xx:74HC595 U?
+L 74xx:74HC595 U2
 U 1 1 601F13DC
 P 4550 1400
-F 0 "U?" H 4550 2181 50  0000 C CNN
-F 1 "74HC595" H 4550 2090 50  0000 C CNN
+F 0 "U2" H 4550 2181 50  0000 C CNN
+F 1 "74HC595" H 4550 2090 50  0001 C CNN
 F 2 "" H 4550 1400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4550 1400 50  0001 C CNN
 	1    4550 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATtiny:ATtiny85V-10PU U?
+L Pool_Controller-rescue:ATtiny85V-10PU-MCU_Microchip_ATtiny U1
 U 1 1 601F2825
 P 2850 1400
-F 0 "U?" H 2320 1446 50  0000 R CNN
-F 1 "ATtiny85V-10PU" H 2320 1355 50  0000 R CNN
+F 0 "U1" H 2320 1446 50  0000 R CNN
+F 1 "ATtiny85V-10PU" H 2320 1355 50  0001 R CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 2850 1400 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2850 1400 50  0001 C CNN
 	1    2850 1400
@@ -899,4 +900,48 @@ Wire Wire Line
 Connection ~ 5800 4600
 Wire Wire Line
 	5800 4600 4450 4600
+$Comp
+L Regulator_Linear:L7805 U4
+U 1 1 60538E17
+P 9100 4250
+F 0 "U4" H 9100 4492 50  0000 C CNN
+F 1 "L7805" H 9100 4401 50  0000 C CNN
+F 2 "" H 9125 4100 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 9100 4200 50  0001 C CNN
+	1    9100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7809 U3
+U 1 1 60539486
+P 8100 4250
+F 0 "U3" H 8100 4492 50  0000 C CNN
+F 1 "L7809" H 8100 4401 50  0000 C CNN
+F 2 "" H 8125 4100 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8100 4200 50  0001 C CNN
+	1    8100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM317_3PinPackage U5
+U 1 1 60539C18
+P 10000 4250
+F 0 "U5" H 10000 4492 50  0000 C CNN
+F 1 "LM317" H 10000 4401 50  0000 C CNN
+F 2 "" H 10000 4500 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 10000 4250 50  0001 C CNN
+	1    10000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J1
+U 1 1 60581858
+P 7350 4250
+F 0 "J1" H 7400 4375 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 7400 4376 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7400 4376 50  0001 C CNN
+F 3 "~" H 7350 4250 50  0001 C CNN
+	1    7350 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

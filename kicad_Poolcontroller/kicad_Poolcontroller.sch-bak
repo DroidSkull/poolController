@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Pool_Controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -25,58 +26,36 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4550 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATtiny:ATtiny85V-10PU U?
+L Pool_Controller-rescue:ATtiny85V-10PU-MCU_Microchip_ATtiny U?
 U 1 1 601F2825
-P 3150 1400
-F 0 "U?" H 2620 1446 50  0000 R CNN
-F 1 "ATtiny85V-10PU" H 2620 1355 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3150 1400 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 3150 1400 50  0001 C CNN
-	1    3150 1400
+P 2850 1400
+F 0 "U?" H 2320 1446 50  0000 R CNN
+F 1 "ATtiny85V-10PU" H 2320 1355 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2850 1400 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2850 1400 50  0001 C CNN
+	1    2850 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:2N2219 Q5
 U 1 1 601F3838
-P 6850 2000
-F 0 "Q5" H 7040 2000 50  0000 L CNN
-F 1 "2N2219" H 7040 1955 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-39-3" H 7050 1925 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 6850 2000 50  0001 L CNN
-	1    6850 2000
+P 6900 2300
+F 0 "Q5" H 7090 2300 50  0000 L CNN
+F 1 "2N2219" H 7090 2255 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 7100 2225 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 6900 2300 50  0001 L CNN
+	1    6900 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:2N2219 Q6
 U 1 1 601F4505
-P 7700 2000
-F 0 "Q6" H 7890 2000 50  0000 L CNN
-F 1 "2N2219" H 7890 1955 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-39-3" H 7900 1925 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 7700 2000 50  0001 L CNN
-	1    7700 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:2N2219 Q7
-U 1 1 601F62F4
-P 8550 2000
-F 0 "Q7" H 8740 2000 50  0000 L CNN
-F 1 "2N2219" H 8740 1955 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-39-3" H 8750 1925 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 8550 2000 50  0001 L CNN
-	1    8550 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:2N2219 Q8
-U 1 1 601F63AE
-P 9400 2000
-F 0 "Q8" H 9590 2000 50  0000 L CNN
-F 1 "2N2219" H 9590 1955 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-39-3" H 9600 1925 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 9400 2000 50  0001 L CNN
-	1    9400 2000
+P 7750 2300
+F 0 "Q6" H 7940 2300 50  0000 L CNN
+F 1 "2N2219" H 7940 2255 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 7950 2225 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 7750 2300 50  0001 L CNN
+	1    7750 2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -167,16 +146,8 @@ F 3 "~" H 5500 1000 50  0001 C CNN
 	1    5500 1000
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5700 2000 2    50   Input ~ 0
-Q4
-Text GLabel 5700 2250 2    50   Input ~ 0
-Q3
-Text GLabel 5700 2500 2    50   Input ~ 0
-Q2
 Wire Wire Line
 	5650 2750 5700 2750
-Text GLabel 5700 2750 2    50   Input ~ 0
-Q1
 $Comp
 L Device:R R4
 U 1 1 601FEFFE
@@ -221,14 +192,6 @@ F 3 "~" H 5500 2750 50  0001 C CNN
 	1    5500 2750
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5700 1750 2    50   Input ~ 0
-Q5
-Text GLabel 5700 1500 2    50   Input ~ 0
-Q6
-Text GLabel 5700 1250 2    50   Input ~ 0
-Q7
-Text GLabel 5700 1000 2    50   Input ~ 0
-Q8
 Wire Wire Line
 	5300 1100 5300 1250
 Wire Wire Line
@@ -287,44 +250,6 @@ Wire Wire Line
 	5650 2250 5700 2250
 Wire Wire Line
 	5650 2500 5700 2500
-Text GLabel 7200 1500 0    50   Input ~ 0
-Q2
-Text GLabel 6350 1500 0    50   Input ~ 0
-Q1
-Text GLabel 8050 1500 0    50   Input ~ 0
-Q3
-Text GLabel 8900 1500 0    50   Input ~ 0
-Q4
-Text GLabel 6600 2000 0    50   Input ~ 0
-Q5
-Text GLabel 7450 2000 0    50   Input ~ 0
-Q6
-Text GLabel 8300 2000 0    50   Input ~ 0
-Q7
-Text GLabel 9150 2000 0    50   Input ~ 0
-Q8
-$Comp
-L pspice:0 #GND?
-U 1 1 6028386E
-P 6350 1750
-F 0 "#GND?" V 6350 1794 50  0001 L CNN
-F 1 "0" V 6350 1794 50  0001 L CNN
-F 2 "" H 6350 1750 50  0001 C CNN
-F 3 "~" H 6350 1750 50  0001 C CNN
-	1    6350 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L pspice:0 #GND?
-U 1 1 60285810
-P 6350 2250
-F 0 "#GND?" V 6350 2294 50  0001 L CNN
-F 1 "0" V 6350 2294 50  0001 L CNN
-F 2 "" H 6350 2250 50  0001 C CNN
-F 3 "~" H 6350 2250 50  0001 C CNN
-	1    6350 2250
-	0    1    1    0   
-$EndComp
 $Comp
 L power:+12V #PWR?
 U 1 1 60286526
@@ -339,25 +264,640 @@ $EndComp
 $Comp
 L Relay:SANYOU_SRD_Form_C K1
 U 1 1 602923FD
-P 5850 3750
-F 0 "K1" H 6280 3750 50  0000 L CNN
-F 1 "SANYOU_SRD_Form_C" H 6280 3705 50  0001 L CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6300 3700 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5850 3750 50  0001 C CNN
-	1    5850 3750
+P 1600 4200
+F 0 "K1" H 2030 4200 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 2030 4155 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 2050 4150 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 1600 4200 50  0001 C CNN
+	1    1600 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:1N4007 D1
 U 1 1 60293DD3
-P 5250 3750
-F 0 "D1" V 5250 3830 50  0000 L CNN
-F 1 "1N4007" V 5295 3830 50  0001 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5250 3575 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5250 3750 50  0001 C CNN
-	1    5250 3750
+P 1000 4200
+F 0 "D1" V 1000 4280 50  0000 L CNN
+F 1 "1N4007" V 1045 4280 50  0001 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1000 4025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1000 4200 50  0001 C CNN
+	1    1000 4200
 	0    1    1    0   
 $EndComp
-Text GLabel 6600 2500 0    50   Input ~ 0
+Text HLabel 5700 1250 2    50   Output ~ 0
+Q2
+Text HLabel 5700 1000 2    50   Output ~ 0
+Q1
+Text HLabel 5700 1500 2    50   Output ~ 0
+Q3
+Text HLabel 5700 2000 2    50   Output ~ 0
+Q5
+Text HLabel 5700 2250 2    50   Output ~ 0
+Q6
+Text HLabel 5700 2500 2    50   Output ~ 0
+Q7
+Text HLabel 5700 1750 2    50   Output ~ 0
+Q4
+Text HLabel 5700 2750 2    50   Output ~ 0
+Q8
+Text HLabel 6350 1500 0    50   Input ~ 0
+Q1
+Text HLabel 7200 1500 0    50   Input ~ 0
+Q2
+Text HLabel 8050 1500 0    50   Input ~ 0
+Q3
+Text HLabel 8900 1500 0    50   Input ~ 0
+Q4
+Text HLabel 6650 2300 0    50   Input ~ 0
+Q5
+Text HLabel 7500 2300 0    50   Input ~ 0
+Q6
+Text HLabel 8300 2300 0    50   Input ~ 0
+Q7
+Text HLabel 9150 2300 0    50   Input ~ 0
+Q8
+Text HLabel 6800 1950 2    50   Output ~ 0
 K1
+Text HLabel 7650 1950 2    50   Output ~ 0
+K2
+Text HLabel 8450 1950 2    50   Output ~ 0
+K3
+Text HLabel 9300 1950 2    50   Output ~ 0
+K4
+Text HLabel 7050 2750 2    50   Output ~ 0
+K5
+Text HLabel 7900 2750 2    50   Output ~ 0
+K6
+Text HLabel 8700 2750 2    50   Output ~ 0
+K7
+Text HLabel 9550 2750 2    50   Output ~ 0
+K8
+$Comp
+L power:GND #PWR?
+U 1 1 602988CB
+P 1400 4650
+F 0 "#PWR?" H 1400 4400 50  0001 C CNN
+F 1 "GND" H 1405 4477 50  0000 C CNN
+F 2 "" H 1400 4650 50  0001 C CNN
+F 3 "" H 1400 4650 50  0001 C CNN
+	1    1400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 6029D8C8
+P 2950 4200
+F 0 "K?" H 3380 4200 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 3380 4155 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 3400 4150 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 2950 4200 50  0001 C CNN
+	1    2950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 6029DB4A
+P 2350 4200
+F 0 "D?" V 2350 4280 50  0000 L CNN
+F 1 "1N4007" V 2395 4280 50  0001 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2350 4025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2350 4200 50  0001 C CNN
+	1    2350 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6029DB55
+P 2750 4650
+F 0 "#PWR?" H 2750 4400 50  0001 C CNN
+F 1 "GND" H 2755 4477 50  0000 C CNN
+F 2 "" H 2750 4650 50  0001 C CNN
+F 3 "" H 2750 4650 50  0001 C CNN
+	1    2750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 602A0B63
+P 4250 4200
+F 0 "K?" H 4680 4200 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 4680 4155 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 4700 4150 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 4250 4200 50  0001 C CNN
+	1    4250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 602A0E57
+P 3650 4200
+F 0 "D?" V 3650 4280 50  0000 L CNN
+F 1 "1N4007" V 3695 4280 50  0001 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3650 4025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3650 4200 50  0001 C CNN
+	1    3650 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602A0E62
+P 4050 4650
+F 0 "#PWR?" H 4050 4400 50  0001 C CNN
+F 1 "GND" H 4055 4477 50  0000 C CNN
+F 2 "" H 4050 4650 50  0001 C CNN
+F 3 "" H 4050 4650 50  0001 C CNN
+	1    4050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 602A0E76
+P 5600 4200
+F 0 "K?" H 6030 4200 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 6030 4155 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6050 4150 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5600 4200 50  0001 C CNN
+	1    5600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 602A0E80
+P 5000 4200
+F 0 "D?" V 5000 4280 50  0000 L CNN
+F 1 "1N4007" V 5045 4280 50  0001 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5000 4025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5000 4200 50  0001 C CNN
+	1    5000 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602A0E8B
+P 5400 4650
+F 0 "#PWR?" H 5400 4400 50  0001 C CNN
+F 1 "GND" H 5405 4477 50  0000 C CNN
+F 2 "" H 5400 4650 50  0001 C CNN
+F 3 "" H 5400 4650 50  0001 C CNN
+	1    5400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 602B11FC
+P 1600 5700
+F 0 "K?" H 2030 5700 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 2030 5655 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 2050 5650 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 1600 5700 50  0001 C CNN
+	1    1600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 602B15D4
+P 1000 5700
+F 0 "D?" V 1000 5780 50  0000 L CNN
+F 1 "1N4007" V 1045 5780 50  0001 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1000 5525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1000 5700 50  0001 C CNN
+	1    1000 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602B15DF
+P 1400 6150
+F 0 "#PWR?" H 1400 5900 50  0001 C CNN
+F 1 "GND" H 1405 5977 50  0000 C CNN
+F 2 "" H 1400 6150 50  0001 C CNN
+F 3 "" H 1400 6150 50  0001 C CNN
+	1    1400 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 602B15F3
+P 2950 5700
+F 0 "K?" H 3380 5700 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 3380 5655 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 3400 5650 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 2950 5700 50  0001 C CNN
+	1    2950 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 602B15FD
+P 2350 5700
+F 0 "D?" V 2350 5780 50  0000 L CNN
+F 1 "1N4007" V 2395 5780 50  0001 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2350 5525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2350 5700 50  0001 C CNN
+	1    2350 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602B1608
+P 2750 6150
+F 0 "#PWR?" H 2750 5900 50  0001 C CNN
+F 1 "GND" H 2755 5977 50  0000 C CNN
+F 2 "" H 2750 6150 50  0001 C CNN
+F 3 "" H 2750 6150 50  0001 C CNN
+	1    2750 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 602B161C
+P 4250 5700
+F 0 "K?" H 4680 5700 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 4680 5655 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 4700 5650 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 4250 5700 50  0001 C CNN
+	1    4250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 602B1626
+P 3650 5700
+F 0 "D?" V 3650 5780 50  0000 L CNN
+F 1 "1N4007" V 3695 5780 50  0001 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3650 5525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3650 5700 50  0001 C CNN
+	1    3650 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602B1631
+P 4050 6150
+F 0 "#PWR?" H 4050 5900 50  0001 C CNN
+F 1 "GND" H 4055 5977 50  0000 C CNN
+F 2 "" H 4050 6150 50  0001 C CNN
+F 3 "" H 4050 6150 50  0001 C CNN
+	1    4050 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 602B1645
+P 5600 5700
+F 0 "K?" H 6030 5700 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 6030 5655 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6050 5650 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5600 5700 50  0001 C CNN
+	1    5600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 602B164F
+P 5000 5700
+F 0 "D?" V 5000 5780 50  0000 L CNN
+F 1 "1N4007" V 5045 5780 50  0001 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5000 5525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5000 5700 50  0001 C CNN
+	1    5000 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602B165A
+P 5400 6150
+F 0 "#PWR?" H 5400 5900 50  0001 C CNN
+F 1 "GND" H 5405 5977 50  0000 C CNN
+F 2 "" H 5400 6150 50  0001 C CNN
+F 3 "" H 5400 6150 50  0001 C CNN
+	1    5400 6150
+	1    0    0    -1  
+$EndComp
+Text HLabel 5950 4600 2    50   Input ~ 0
++12V
+Text HLabel 5950 6100 2    50   Input ~ 0
++12V
+Wire Wire Line
+	6700 1000 6700 1200
+Wire Wire Line
+	9250 1200 9250 1300
+Connection ~ 6700 1200
+Wire Wire Line
+	6700 1200 6700 1300
+Wire Wire Line
+	7550 1200 7550 1300
+Connection ~ 7550 1200
+Wire Wire Line
+	8400 1200 8400 1300
+Connection ~ 8400 1200
+Connection ~ 9250 1200
+Wire Wire Line
+	9500 1200 9250 1200
+Wire Wire Line
+	9500 2100 9500 1200
+Wire Wire Line
+	8650 2100 8650 1200
+Wire Wire Line
+	8650 1200 9250 1200
+Wire Wire Line
+	8400 1200 8650 1200
+Connection ~ 8650 1200
+$Comp
+L Transistor_BJT:2N2219 Q7
+U 1 1 601F62F4
+P 8550 2300
+F 0 "Q7" H 8740 2300 50  0000 L CNN
+F 1 "2N2219" H 8740 2255 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 8750 2225 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 8550 2300 50  0001 L CNN
+	1    8550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q8
+U 1 1 601F63AE
+P 9400 2300
+F 0 "Q8" H 9590 2300 50  0000 L CNN
+F 1 "2N2219" H 9590 2255 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 9600 2225 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 9400 2300 50  0001 L CNN
+	1    9400 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1200 7850 1200
+Wire Wire Line
+	7000 2100 7000 1200
+Wire Wire Line
+	6700 1200 7000 1200
+Connection ~ 7000 1200
+Wire Wire Line
+	7000 1200 7550 1200
+Wire Wire Line
+	7850 2100 7850 1200
+Connection ~ 7850 1200
+Wire Wire Line
+	7850 1200 8400 1200
+Wire Wire Line
+	6700 1700 6700 1950
+Wire Wire Line
+	6700 1950 6800 1950
+Wire Wire Line
+	7550 1700 7550 1950
+Wire Wire Line
+	7550 1950 7650 1950
+Wire Wire Line
+	8400 1700 8400 1950
+Wire Wire Line
+	8400 1950 8450 1950
+Wire Wire Line
+	9250 1700 9250 1950
+Wire Wire Line
+	9250 1950 9300 1950
+Wire Wire Line
+	9500 2500 9500 2750
+Wire Wire Line
+	9500 2750 9550 2750
+Wire Wire Line
+	8650 2500 8650 2750
+Wire Wire Line
+	8650 2750 8700 2750
+Wire Wire Line
+	7850 2500 7850 2750
+Wire Wire Line
+	7850 2750 7900 2750
+Wire Wire Line
+	7000 2500 7000 2750
+Wire Wire Line
+	7000 2750 7050 2750
+Wire Wire Line
+	8300 2300 8350 2300
+Wire Wire Line
+	7500 2300 7550 2300
+Wire Wire Line
+	6650 2300 6700 2300
+Wire Wire Line
+	7200 1500 7250 1500
+Wire Wire Line
+	6350 1500 6400 1500
+Wire Wire Line
+	8050 1500 8100 1500
+Wire Wire Line
+	8900 1500 8950 1500
+Wire Wire Line
+	9150 2300 9200 2300
+Text HLabel 1350 3600 0    50   Input ~ 0
+K1
+Text HLabel 2700 3600 0    50   Input ~ 0
+K1
+Text HLabel 4000 3600 0    50   Input ~ 0
+K1
+Text HLabel 5350 3600 0    50   Input ~ 0
+K1
+Text HLabel 1350 5100 0    50   Input ~ 0
+K1
+Text HLabel 2700 5100 0    50   Input ~ 0
+K1
+Text HLabel 4000 5100 0    50   Input ~ 0
+K1
+Text HLabel 5350 5100 0    50   Input ~ 0
+K1
+Wire Wire Line
+	1350 3600 1400 3600
+Wire Wire Line
+	1400 3600 1400 3850
+Wire Wire Line
+	2700 3600 2750 3600
+Wire Wire Line
+	2750 3600 2750 3850
+Wire Wire Line
+	4000 3600 4050 3600
+Wire Wire Line
+	4050 3600 4050 3850
+Wire Wire Line
+	5350 3600 5400 3600
+Wire Wire Line
+	5400 3600 5400 3850
+Wire Wire Line
+	1350 5100 1400 5100
+Wire Wire Line
+	1400 5100 1400 5350
+Wire Wire Line
+	2700 5100 2750 5100
+Wire Wire Line
+	2750 5100 2750 5350
+Wire Wire Line
+	4000 5100 4050 5100
+Wire Wire Line
+	4050 5100 4050 5350
+Wire Wire Line
+	5350 5100 5400 5100
+Wire Wire Line
+	5400 5100 5400 5350
+Wire Wire Line
+	1400 4500 1400 4550
+Wire Wire Line
+	2750 4500 2750 4550
+Wire Wire Line
+	4050 4500 4050 4550
+Wire Wire Line
+	5400 4500 5400 4550
+Wire Wire Line
+	1400 6000 1400 6050
+Wire Wire Line
+	2750 6000 2750 6050
+Wire Wire Line
+	4050 6000 4050 6050
+Wire Wire Line
+	5400 6000 5400 6050
+Wire Wire Line
+	5000 5850 5000 6050
+Wire Wire Line
+	5000 6050 5400 6050
+Connection ~ 5400 6050
+Wire Wire Line
+	5400 6050 5400 6150
+Wire Wire Line
+	5000 5550 5000 5350
+Wire Wire Line
+	5000 5350 5400 5350
+Connection ~ 5400 5350
+Wire Wire Line
+	5400 5350 5400 5400
+Wire Wire Line
+	3650 5850 3650 6050
+Wire Wire Line
+	3650 6050 4050 6050
+Connection ~ 4050 6050
+Wire Wire Line
+	4050 6050 4050 6150
+Wire Wire Line
+	3650 5550 3650 5350
+Wire Wire Line
+	3650 5350 4050 5350
+Connection ~ 4050 5350
+Wire Wire Line
+	4050 5350 4050 5400
+Wire Wire Line
+	2350 5850 2350 6050
+Wire Wire Line
+	2350 6050 2750 6050
+Connection ~ 2750 6050
+Wire Wire Line
+	2750 6050 2750 6150
+Wire Wire Line
+	2350 5550 2350 5350
+Wire Wire Line
+	2350 5350 2750 5350
+Connection ~ 2750 5350
+Wire Wire Line
+	2750 5350 2750 5400
+Wire Wire Line
+	1000 5550 1000 5350
+Wire Wire Line
+	1000 5350 1400 5350
+Connection ~ 1400 5350
+Wire Wire Line
+	1400 5350 1400 5400
+Wire Wire Line
+	1000 5850 1000 6050
+Wire Wire Line
+	1000 6050 1400 6050
+Connection ~ 1400 6050
+Wire Wire Line
+	1400 6050 1400 6150
+Wire Wire Line
+	1000 4050 1000 3850
+Wire Wire Line
+	1000 3850 1400 3850
+Connection ~ 1400 3850
+Wire Wire Line
+	1400 3850 1400 3900
+Wire Wire Line
+	1000 4350 1000 4550
+Wire Wire Line
+	1000 4550 1400 4550
+Connection ~ 1400 4550
+Wire Wire Line
+	1400 4550 1400 4650
+Wire Wire Line
+	2350 4050 2350 3850
+Wire Wire Line
+	2350 3850 2750 3850
+Connection ~ 2750 3850
+Wire Wire Line
+	2750 3850 2750 3900
+Wire Wire Line
+	2350 4350 2350 4550
+Wire Wire Line
+	2350 4550 2750 4550
+Connection ~ 2750 4550
+Wire Wire Line
+	2750 4550 2750 4650
+Wire Wire Line
+	3650 4050 3650 3850
+Wire Wire Line
+	3650 3850 4050 3850
+Connection ~ 4050 3850
+Wire Wire Line
+	4050 3850 4050 3900
+Wire Wire Line
+	3650 4350 3650 4550
+Wire Wire Line
+	3650 4550 4050 4550
+Connection ~ 4050 4550
+Wire Wire Line
+	4050 4550 4050 4650
+Wire Wire Line
+	5000 4050 5000 3850
+Wire Wire Line
+	5000 3850 5400 3850
+Connection ~ 5400 3850
+Wire Wire Line
+	5400 3850 5400 3900
+Wire Wire Line
+	5000 4350 5000 4550
+Wire Wire Line
+	5000 4550 5400 4550
+Connection ~ 5400 4550
+Wire Wire Line
+	5400 4550 5400 4650
+Wire Wire Line
+	5950 4600 5800 4600
+Wire Wire Line
+	1800 4600 1800 4500
+Wire Wire Line
+	5950 6100 5800 6100
+Wire Wire Line
+	1800 6100 1800 6000
+Wire Wire Line
+	3150 6100 3150 6000
+Connection ~ 3150 6100
+Wire Wire Line
+	3150 6100 1800 6100
+Wire Wire Line
+	4450 6100 4450 6000
+Connection ~ 4450 6100
+Wire Wire Line
+	4450 6100 3150 6100
+Wire Wire Line
+	5800 6100 5800 6000
+Connection ~ 5800 6100
+Wire Wire Line
+	5800 6100 4450 6100
+Wire Wire Line
+	3150 4500 3150 4600
+Connection ~ 3150 4600
+Wire Wire Line
+	3150 4600 1800 4600
+Wire Wire Line
+	4450 4500 4450 4600
+Connection ~ 4450 4600
+Wire Wire Line
+	4450 4600 3150 4600
+Wire Wire Line
+	5800 4500 5800 4600
+Connection ~ 5800 4600
+Wire Wire Line
+	5800 4600 4450 4600
 $EndSCHEMATC

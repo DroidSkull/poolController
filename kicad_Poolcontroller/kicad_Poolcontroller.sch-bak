@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Pool_Controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -26,7 +25,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4550 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Pool_Controller-rescue:ATtiny85V-10PU-MCU_Microchip_ATtiny U1
+L kicad_Poolcontroller-rescue:ATtiny85V-10PU-MCU_Microchip_ATtiny-Pool_Controller-rescue U1
 U 1 1 601F2825
 P 2850 1400
 F 0 "U1" H 2320 1446 50  0000 R CNN
@@ -903,45 +902,210 @@ Wire Wire Line
 $Comp
 L Regulator_Linear:L7805 U4
 U 1 1 60538E17
-P 9100 4250
-F 0 "U4" H 9100 4492 50  0000 C CNN
-F 1 "L7805" H 9100 4401 50  0000 C CNN
-F 2 "" H 9125 4100 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 9100 4200 50  0001 C CNN
-	1    9100 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:L7809 U3
-U 1 1 60539486
-P 8100 4250
-F 0 "U3" H 8100 4492 50  0000 C CNN
-F 1 "L7809" H 8100 4401 50  0000 C CNN
-F 2 "" H 8125 4100 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8100 4200 50  0001 C CNN
-	1    8100 4250
+P 9300 4250
+F 0 "U4" H 9300 4492 50  0000 C CNN
+F 1 "L7805" H 9300 4401 50  0000 C CNN
+F 2 "" H 9325 4100 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 9300 4200 50  0001 C CNN
+	1    9300 4250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Regulator_Linear:LM317_3PinPackage U5
 U 1 1 60539C18
-P 10000 4250
-F 0 "U5" H 10000 4492 50  0000 C CNN
-F 1 "LM317" H 10000 4401 50  0000 C CNN
-F 2 "" H 10000 4500 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 10000 4250 50  0001 C CNN
-	1    10000 4250
+P 10250 4250
+F 0 "U5" H 10250 4492 50  0000 C CNN
+F 1 "LM317" H 10250 4401 50  0000 C CNN
+F 2 "" H 10250 4500 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 10250 4250 50  0001 C CNN
+	1    10250 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J1
+L Connector_Generic:Conn_02x02_Odd_Even J2
 U 1 1 60581858
-P 7350 4250
-F 0 "J1" H 7400 4375 50  0000 C CNN
-F 1 "Conn_02x02_Odd_Even" H 7400 4376 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7400 4376 50  0001 C CNN
-F 3 "~" H 7350 4250 50  0001 C CNN
-	1    7350 4250
+P 6900 4250
+F 0 "J2" H 6950 4375 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 6950 4376 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 6950 4376 50  0001 C CNN
+F 3 "~" H 6900 4250 50  0001 C CNN
+	1    6900 4250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Regulator_Linear:L7809 U3
+U 1 1 60539486
+P 8000 4250
+F 0 "U3" H 8000 4492 50  0000 C CNN
+F 1 "L7809" H 8000 4401 50  0000 C CNN
+F 2 "" H 8025 4100 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8000 4200 50  0001 C CNN
+	1    8000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C2
+U 1 1 60613901
+P 8400 4800
+F 0 "C2" H 8578 4800 50  0000 L CNN
+F 1 "47u" H 8578 4755 50  0001 L CNN
+F 2 "" H 8400 4800 50  0001 C CNN
+F 3 "~" H 8400 4800 50  0001 C CNN
+	1    8400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C1
+U 1 1 60612DCD
+P 7600 4800
+F 0 "C1" H 7778 4800 50  0000 L CNN
+F 1 "220u" H 7778 4755 50  0001 L CNN
+F 2 "" H 7600 4800 50  0001 C CNN
+F 3 "~" H 7600 4800 50  0001 C CNN
+	1    7600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C3
+U 1 1 6061E85E
+P 8900 4800
+F 0 "C3" H 9078 4800 50  0000 L CNN
+F 1 "220u" H 9078 4755 50  0001 L CNN
+F 2 "" H 8900 4800 50  0001 C CNN
+F 3 "~" H 8900 4800 50  0001 C CNN
+	1    8900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C4
+U 1 1 6061FCB8
+P 9700 4800
+F 0 "C4" H 9878 4800 50  0000 L CNN
+F 1 "47u" H 9878 4755 50  0001 L CNN
+F 2 "" H 9700 4800 50  0001 C CNN
+F 3 "~" H 9700 4800 50  0001 C CNN
+	1    9700 4800
+	1    0    0    -1  
+$EndComp
+Text HLabel 7300 4350 2    50   Output ~ 0
+5V
+$Comp
+L Connector_Generic:Conn_02x01 J1
+U 1 1 6063541F
+P 6900 5250
+F 0 "J1" H 6950 5375 50  0000 C CNN
+F 1 "Conn_02x01" H 6950 5376 50  0001 C CNN
+F 2 "" H 6900 5250 50  0001 C CNN
+F 3 "~" H 6900 5250 50  0001 C CNN
+	1    6900 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5250 7600 5250
+Wire Wire Line
+	7600 5250 7600 5050
+Wire Wire Line
+	9700 5050 9700 5250
+Wire Wire Line
+	9700 5250 8900 5250
+Connection ~ 7600 5250
+Wire Wire Line
+	8400 5050 8400 5250
+Connection ~ 8400 5250
+Wire Wire Line
+	8400 5250 7600 5250
+Wire Wire Line
+	8900 5050 8900 5250
+Connection ~ 8900 5250
+Wire Wire Line
+	8900 5250 8400 5250
+Wire Wire Line
+	7600 4550 7600 4250
+Wire Wire Line
+	7600 4250 7700 4250
+Wire Wire Line
+	7600 4250 7200 4250
+Connection ~ 7600 4250
+Wire Wire Line
+	8300 4250 8400 4250
+Wire Wire Line
+	8400 4250 8400 4550
+Wire Wire Line
+	8400 4250 8650 4250
+Connection ~ 8400 4250
+Wire Wire Line
+	8900 4250 8900 4550
+Connection ~ 8900 4250
+Wire Wire Line
+	8900 4250 9000 4250
+Text HLabel 8650 4100 1    50   Input ~ 0
+5V
+Wire Wire Line
+	8650 4100 8650 4250
+Connection ~ 8650 4250
+Wire Wire Line
+	8650 4250 8900 4250
+Wire Wire Line
+	6700 5250 6650 5250
+Wire Wire Line
+	6650 5250 6650 4350
+Wire Wire Line
+	6650 4250 6700 4250
+Wire Wire Line
+	6650 4350 6700 4350
+Connection ~ 6650 4350
+Wire Wire Line
+	6650 4350 6650 4250
+Wire Wire Line
+	9600 4250 9700 4250
+Wire Wire Line
+	9700 4250 9700 4550
+Wire Wire Line
+	9700 4250 9950 4250
+Connection ~ 9700 4250
+$Comp
+L Device:R R?
+U 1 1 606B34ED
+P 10250 5050
+F 0 "R?" H 10320 5096 50  0000 L CNN
+F 1 "R" H 10320 5005 50  0000 L CNN
+F 2 "" V 10180 5050 50  0001 C CNN
+F 3 "~" H 10250 5050 50  0001 C CNN
+	1    10250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 606B3F3F
+P 10700 4500
+F 0 "R?" H 10630 4454 50  0000 R CNN
+F 1 "R" H 10630 4545 50  0000 R CNN
+F 2 "" V 10630 4500 50  0001 C CNN
+F 3 "~" H 10700 4500 50  0001 C CNN
+	1    10700 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10250 4550 10250 4750
+Wire Wire Line
+	10700 4650 10700 4750
+Wire Wire Line
+	10700 4750 10250 4750
+Connection ~ 10250 4750
+Wire Wire Line
+	10250 4750 10250 4900
+Wire Wire Line
+	9700 5250 10250 5250
+Wire Wire Line
+	10250 5250 10250 5200
+Connection ~ 9700 5250
+Wire Wire Line
+	10550 4250 10700 4250
+Wire Wire Line
+	10700 4250 10700 4350
+Text HLabel 10900 4250 2    50   Output ~ 0
+3.3V
+Wire Wire Line
+	10700 4250 10900 4250
+Connection ~ 10700 4250
 $EndSCHEMATC

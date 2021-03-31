@@ -796,7 +796,7 @@ F 3 "~" H 9750 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7350 4350 2    50   Output ~ 0
-5V
++5V
 $Comp
 L Connector_Generic:Conn_02x01 J1
 U 1 1 6063541F
@@ -1227,8 +1227,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5300 4250 50  0001
 $EndComp
 Wire Wire Line
 	5500 4550 5500 4600
-Wire Wire Line
-	5500 4600 5850 4600
 $Comp
 L power:GND #PWR0101
 U 1 1 60E6877E
@@ -1276,7 +1274,7 @@ U 1 1 6065955B
 P 5500 3650
 F 0 "J6" V 5600 3650 50  0000 R CNN
 F 1 "Conn_01x04" V 5373 3362 50  0001 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 5500 3650 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 5500 3650 50  0001 C CNN
 F 3 "~" H 5500 3650 50  0001 C CNN
 	1    5500 3650
 	0    -1   -1   0   
@@ -1302,72 +1300,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 3950 4250 50  0001
 	1    3950 4250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J7
-U 1 1 60803038
-P 4150 3650
-F 0 "J7" V 4250 3650 50  0000 R CNN
-F 1 "Conn_01x04" V 4023 3362 50  0001 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 4150 3650 50  0001 C CNN
-F 3 "~" H 4150 3650 50  0001 C CNN
-	1    4150 3650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J9
-U 1 1 6080408C
-P 1500 3650
-F 0 "J9" V 1600 3650 50  0000 R CNN
-F 1 "Conn_01x04" V 1373 3362 50  0001 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 1500 3650 50  0001 C CNN
-F 3 "~" H 1500 3650 50  0001 C CNN
-	1    1500 3650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J10
-U 1 1 60805349
-P 1450 5150
-F 0 "J10" V 1550 5150 50  0000 R CNN
-F 1 "Conn_01x04" V 1323 4862 50  0001 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 1450 5150 50  0001 C CNN
-F 3 "~" H 1450 5150 50  0001 C CNN
-	1    1450 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J11
-U 1 1 608060CB
-P 2800 5150
-F 0 "J11" V 2900 5150 50  0000 R CNN
-F 1 "Conn_01x04" V 2673 4862 50  0001 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 2800 5150 50  0001 C CNN
-F 3 "~" H 2800 5150 50  0001 C CNN
-	1    2800 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J12
-U 1 1 60806A87
-P 4100 5150
-F 0 "J12" V 4200 5150 50  0000 R CNN
-F 1 "Conn_01x04" V 3973 4862 50  0001 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 4100 5150 50  0001 C CNN
-F 3 "~" H 4100 5150 50  0001 C CNN
-	1    4100 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J13
-U 1 1 608075D9
-P 5450 5150
-F 0 "J13" V 5550 5150 50  0000 R CNN
-F 1 "Conn_01x04" V 5323 4862 50  0001 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 5450 5150 50  0001 C CNN
-F 3 "~" H 5450 5150 50  0001 C CNN
-	1    5450 5150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5350 5350 5350 5450
 Wire Wire Line
@@ -1389,6 +1321,8 @@ Wire Wire Line
 Wire Wire Line
 	5850 4600 5850 3950
 Wire Wire Line
+	5500 4600 5850 4600
+Wire Wire Line
 	5850 3950 5700 3950
 Wire Wire Line
 	4350 3850 4350 3950
@@ -1408,17 +1342,6 @@ Wire Wire Line
 	4150 3900 4150 3850
 Wire Wire Line
 	4050 3850 4050 3950
-$Comp
-L Connector_Generic:Conn_01x04 J8
-U 1 1 60893E6F
-P 2850 3650
-F 0 "J8" V 2950 3650 50  0000 R CNN
-F 1 "Conn_01x04" V 2723 3362 50  0001 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 2850 3650 50  0001 C CNN
-F 3 "~" H 2850 3650 50  0001 C CNN
-	1    2850 3650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3050 3850 3050 3950
 Wire Wire Line
@@ -1509,4 +1432,83 @@ Wire Wire Line
 	4450 6100 4100 6100
 Wire Wire Line
 	4100 6100 4100 6050
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 60893E6F
+P 2850 3650
+F 0 "J8" V 2950 3650 50  0000 R CNN
+F 1 "Conn_01x04" V 2723 3362 50  0001 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 2850 3650 50  0001 C CNN
+F 3 "~" H 2850 3650 50  0001 C CNN
+	1    2850 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J9
+U 1 1 6080408C
+P 1500 3650
+F 0 "J9" V 1600 3650 50  0000 R CNN
+F 1 "Conn_01x04" V 1373 3362 50  0001 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 1500 3650 50  0001 C CNN
+F 3 "~" H 1500 3650 50  0001 C CNN
+	1    1500 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J13
+U 1 1 608075D9
+P 5450 5150
+F 0 "J13" V 5550 5150 50  0000 R CNN
+F 1 "Conn_01x04" V 5323 4862 50  0001 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 5450 5150 50  0001 C CNN
+F 3 "~" H 5450 5150 50  0001 C CNN
+	1    5450 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J12
+U 1 1 60806A87
+P 4100 5150
+F 0 "J12" V 4200 5150 50  0000 R CNN
+F 1 "Conn_01x04" V 3973 4862 50  0001 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 4100 5150 50  0001 C CNN
+F 3 "~" H 4100 5150 50  0001 C CNN
+	1    4100 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J11
+U 1 1 608060CB
+P 2800 5150
+F 0 "J11" V 2900 5150 50  0000 R CNN
+F 1 "Conn_01x04" V 2673 4862 50  0001 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 2800 5150 50  0001 C CNN
+F 3 "~" H 2800 5150 50  0001 C CNN
+	1    2800 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J10
+U 1 1 60805349
+P 1450 5150
+F 0 "J10" V 1550 5150 50  0000 R CNN
+F 1 "Conn_01x04" V 1323 4862 50  0001 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 1450 5150 50  0001 C CNN
+F 3 "~" H 1450 5150 50  0001 C CNN
+	1    1450 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 60803038
+P 4150 3650
+F 0 "J7" V 4250 3650 50  0000 R CNN
+F 1 "Conn_01x04" V 4023 3362 50  0001 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 4150 3650 50  0001 C CNN
+F 3 "~" H 4150 3650 50  0001 C CNN
+	1    4150 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7250 4350 7350 4350
 $EndSCHEMATC

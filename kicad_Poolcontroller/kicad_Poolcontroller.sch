@@ -342,17 +342,6 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2050 4250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Relay:SANYOU_SRD_Form_C K3
-U 1 1 602A0B63
-P 3950 4250
-F 0 "K3" H 4380 4250 50  0000 L CNN
-F 1 "SANYOU_SRD_Form_C" H 4380 4205 50  0001 L CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 4400 4200 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 3950 4250 50  0001 C CNN
-	1    3950 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Diode:1N4007 D3
 U 1 1 602A0E57
 P 3350 4250
@@ -1197,195 +1186,6 @@ Wire Wire Line
 	1050 2800 1100 2800
 Wire Wire Line
 	2800 2000 2800 2050
-$Comp
-L Connector_Generic:Conn_02x01 J7
-U 1 1 60A2048A
-P 4100 3800
-F 0 "J7" H 4150 3925 50  0000 C CNN
-F 1 "Conn_02x01" H 4150 3926 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4100 3800 50  0001 C CNN
-F 3 "~" H 4100 3800 50  0001 C CNN
-	1    4100 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J8
-U 1 1 60A20A45
-P 2800 3800
-F 0 "J8" H 2850 3925 50  0000 C CNN
-F 1 "Conn_02x01" H 2850 3926 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2800 3800 50  0001 C CNN
-F 3 "~" H 2800 3800 50  0001 C CNN
-	1    2800 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J9
-U 1 1 60A20EC9
-P 1450 3800
-F 0 "J9" H 1500 3925 50  0000 C CNN
-F 1 "Conn_02x01" H 1500 3926 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1450 3800 50  0001 C CNN
-F 3 "~" H 1450 3800 50  0001 C CNN
-	1    1450 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J10
-U 1 1 60A212C7
-P 1400 5300
-F 0 "J10" H 1450 5425 50  0000 C CNN
-F 1 "Conn_02x01" H 1450 5426 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1400 5300 50  0001 C CNN
-F 3 "~" H 1400 5300 50  0001 C CNN
-	1    1400 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J11
-U 1 1 60A21869
-P 2750 5300
-F 0 "J11" H 2800 5425 50  0000 C CNN
-F 1 "Conn_02x01" H 2800 5426 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 5300 50  0001 C CNN
-F 3 "~" H 2750 5300 50  0001 C CNN
-	1    2750 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J12
-U 1 1 60A21E51
-P 4050 5300
-F 0 "J12" H 4100 5425 50  0000 C CNN
-F 1 "Conn_02x01" H 4100 5426 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4050 5300 50  0001 C CNN
-F 3 "~" H 4050 5300 50  0001 C CNN
-	1    4050 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 3800 4450 3800
-Wire Wire Line
-	4450 3900 4250 3900
-Wire Wire Line
-	4250 3900 4250 3950
-Wire Wire Line
-	4450 3800 4450 3900
-Wire Wire Line
-	4050 3950 4050 3900
-Wire Wire Line
-	3850 3900 3850 3800
-Wire Wire Line
-	3850 3800 3900 3800
-Wire Wire Line
-	3850 3900 4050 3900
-Wire Wire Line
-	2600 3800 2550 3800
-Wire Wire Line
-	2550 3800 2550 3900
-Wire Wire Line
-	2550 3900 2750 3900
-Wire Wire Line
-	2750 3900 2750 3950
-Wire Wire Line
-	2950 3950 2950 3900
-Wire Wire Line
-	3150 3900 3150 3800
-Wire Wire Line
-	3150 3800 3100 3800
-Wire Wire Line
-	2950 3900 3150 3900
-Wire Wire Line
-	1250 3800 1200 3800
-Wire Wire Line
-	1200 3800 1200 3900
-Wire Wire Line
-	1200 3900 1400 3900
-Wire Wire Line
-	1400 3900 1400 3950
-Wire Wire Line
-	1600 3900 1600 3950
-Wire Wire Line
-	1750 3800 1800 3800
-Wire Wire Line
-	1800 3800 1800 3900
-Wire Wire Line
-	1600 3900 1800 3900
-Wire Wire Line
-	1200 5300 1150 5300
-Wire Wire Line
-	1150 5300 1150 5400
-Wire Wire Line
-	1150 5400 1350 5400
-Wire Wire Line
-	1350 5400 1350 5450
-Wire Wire Line
-	1550 5450 1550 5400
-Wire Wire Line
-	1550 5400 1750 5400
-Wire Wire Line
-	1750 5400 1750 5300
-Wire Wire Line
-	1750 5300 1700 5300
-Wire Wire Line
-	2550 5300 2500 5300
-Wire Wire Line
-	2500 5300 2500 5400
-Wire Wire Line
-	2500 5400 2700 5400
-Wire Wire Line
-	2700 5400 2700 5450
-Wire Wire Line
-	2900 5450 2900 5400
-Wire Wire Line
-	2900 5400 3100 5400
-Wire Wire Line
-	3100 5400 3100 5300
-Wire Wire Line
-	3100 5300 3050 5300
-Wire Wire Line
-	3850 5300 3800 5300
-Wire Wire Line
-	3800 5300 3800 5400
-Wire Wire Line
-	3800 5400 4000 5400
-Wire Wire Line
-	4000 5400 4000 5450
-Wire Wire Line
-	4200 5450 4200 5400
-Wire Wire Line
-	4200 5400 4400 5400
-Wire Wire Line
-	4400 5400 4400 5300
-Wire Wire Line
-	4400 5300 4350 5300
-Wire Wire Line
-	5350 5400 5350 5450
-Wire Wire Line
-	5550 5450 5550 5400
-Wire Wire Line
-	5550 5400 5750 5400
-Wire Wire Line
-	5750 5400 5750 5300
-Wire Wire Line
-	5750 5300 5700 5300
-Wire Wire Line
-	5200 5300 5150 5300
-Wire Wire Line
-	5150 5300 5150 5400
-Wire Wire Line
-	5150 5400 5350 5400
-$Comp
-L Connector_Generic:Conn_02x01 J13
-U 1 1 60A22231
-P 5400 5300
-F 0 "J13" H 5450 5425 50  0000 C CNN
-F 1 "Conn_02x01" H 5450 5426 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5400 5300 50  0001 C CNN
-F 3 "~" H 5400 5300 50  0001 C CNN
-	1    5400 5300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2450 4600 2450 4700
 Wire Wire Line
@@ -1415,17 +1215,6 @@ Wire Wire Line
 	3700 6200 5050 6200
 Connection ~ 3700 6200
 $Comp
-L Connector_Generic:Conn_01x03 J6
-U 1 1 60F1727E
-P 5500 3600
-F 0 "J6" V 5600 3650 50  0000 R CNN
-F 1 "Conn_01x03" V 5373 3412 50  0001 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 5500 3600 50  0001 C CNN
-F 3 "~" H 5500 3600 50  0001 C CNN
-	1    5500 3600
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Relay:SANYOU_SRD_Form_C K4
 U 1 1 602A0E76
 P 5300 4250
@@ -1439,17 +1228,7 @@ $EndComp
 Wire Wire Line
 	5500 4550 5500 4600
 Wire Wire Line
-	5500 4600 5900 4600
-Wire Wire Line
-	5900 4600 5900 3900
-Wire Wire Line
-	5900 3900 5500 3900
-Wire Wire Line
-	5500 3900 5500 3800
-Wire Wire Line
-	5600 3800 5600 3950
-Wire Wire Line
-	5400 3800 5400 3950
+	5500 4600 5850 4600
 $Comp
 L power:GND #PWR0101
 U 1 1 60E6877E
@@ -1491,4 +1270,243 @@ Wire Wire Line
 	6800 1300 7100 1300
 Wire Wire Line
 	7100 1300 7100 1000
+$Comp
+L Connector_Generic:Conn_01x04 J6
+U 1 1 6065955B
+P 5500 3650
+F 0 "J6" V 5600 3650 50  0000 R CNN
+F 1 "Conn_01x04" V 5373 3362 50  0001 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 5500 3650 50  0001 C CNN
+F 3 "~" H 5500 3650 50  0001 C CNN
+	1    5500 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 3950 5700 3850
+Wire Wire Line
+	5500 3850 5500 3900
+Wire Wire Line
+	5500 3900 5600 3900
+Wire Wire Line
+	5600 3900 5600 3950
+Wire Wire Line
+	5400 3850 5400 3950
+$Comp
+L Relay:SANYOU_SRD_Form_C K3
+U 1 1 602A0B63
+P 3950 4250
+F 0 "K3" H 4380 4250 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 4380 4205 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 4400 4200 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 3950 4250 50  0001 C CNN
+	1    3950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 60803038
+P 4150 3650
+F 0 "J7" V 4250 3650 50  0000 R CNN
+F 1 "Conn_01x04" V 4023 3362 50  0001 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 4150 3650 50  0001 C CNN
+F 3 "~" H 4150 3650 50  0001 C CNN
+	1    4150 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J9
+U 1 1 6080408C
+P 1500 3650
+F 0 "J9" V 1600 3650 50  0000 R CNN
+F 1 "Conn_01x04" V 1373 3362 50  0001 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 1500 3650 50  0001 C CNN
+F 3 "~" H 1500 3650 50  0001 C CNN
+	1    1500 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J10
+U 1 1 60805349
+P 1450 5150
+F 0 "J10" V 1550 5150 50  0000 R CNN
+F 1 "Conn_01x04" V 1323 4862 50  0001 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 1450 5150 50  0001 C CNN
+F 3 "~" H 1450 5150 50  0001 C CNN
+	1    1450 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J11
+U 1 1 608060CB
+P 2800 5150
+F 0 "J11" V 2900 5150 50  0000 R CNN
+F 1 "Conn_01x04" V 2673 4862 50  0001 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 2800 5150 50  0001 C CNN
+F 3 "~" H 2800 5150 50  0001 C CNN
+	1    2800 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J12
+U 1 1 60806A87
+P 4100 5150
+F 0 "J12" V 4200 5150 50  0000 R CNN
+F 1 "Conn_01x04" V 3973 4862 50  0001 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 4100 5150 50  0001 C CNN
+F 3 "~" H 4100 5150 50  0001 C CNN
+	1    4100 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J13
+U 1 1 608075D9
+P 5450 5150
+F 0 "J13" V 5550 5150 50  0000 R CNN
+F 1 "Conn_01x04" V 5323 4862 50  0001 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 5450 5150 50  0001 C CNN
+F 3 "~" H 5450 5150 50  0001 C CNN
+	1    5450 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 5350 5350 5450
+Wire Wire Line
+	5450 5350 5450 5400
+Wire Wire Line
+	5450 5400 5550 5400
+Wire Wire Line
+	5550 5400 5550 5450
+Wire Wire Line
+	5450 6050 5450 6200
+Wire Wire Line
+	5450 6200 5800 6200
+Wire Wire Line
+	5800 6200 5800 5450
+Wire Wire Line
+	5800 5450 5650 5450
+Wire Wire Line
+	5650 5450 5650 5350
+Wire Wire Line
+	5850 4600 5850 3950
+Wire Wire Line
+	5850 3950 5700 3950
+Wire Wire Line
+	4350 3850 4350 3950
+Wire Wire Line
+	4350 3950 4500 3950
+Wire Wire Line
+	4500 3950 4500 4600
+Wire Wire Line
+	4500 4600 4150 4600
+Wire Wire Line
+	4150 4600 4150 4550
+Wire Wire Line
+	4250 3950 4250 3900
+Wire Wire Line
+	4250 3900 4150 3900
+Wire Wire Line
+	4150 3900 4150 3850
+Wire Wire Line
+	4050 3850 4050 3950
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 60893E6F
+P 2850 3650
+F 0 "J8" V 2950 3650 50  0000 R CNN
+F 1 "Conn_01x04" V 2723 3362 50  0001 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 2850 3650 50  0001 C CNN
+F 3 "~" H 2850 3650 50  0001 C CNN
+	1    2850 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 3850 3050 3950
+Wire Wire Line
+	3050 3950 3200 3950
+Wire Wire Line
+	3200 3950 3200 4600
+Wire Wire Line
+	3200 4600 2850 4600
+Wire Wire Line
+	2850 4600 2850 4550
+Wire Wire Line
+	2850 3850 2850 3900
+Wire Wire Line
+	2850 3900 2950 3900
+Wire Wire Line
+	2950 3900 2950 3950
+Wire Wire Line
+	2750 3850 2750 3950
+Wire Wire Line
+	1400 3850 1400 3950
+Wire Wire Line
+	1500 3850 1500 3900
+Wire Wire Line
+	1500 3900 1600 3900
+Wire Wire Line
+	1600 3900 1600 3950
+Wire Wire Line
+	1700 3850 1700 4000
+Wire Wire Line
+	1700 4000 1850 4000
+Wire Wire Line
+	1850 4000 1850 4600
+Wire Wire Line
+	1850 4600 1500 4600
+Wire Wire Line
+	1500 4600 1500 4550
+Wire Wire Line
+	1350 5350 1350 5450
+Wire Wire Line
+	1450 5350 1450 5400
+Wire Wire Line
+	1450 5400 1550 5400
+Wire Wire Line
+	1550 5400 1550 5450
+Wire Wire Line
+	1650 5350 1650 5500
+Wire Wire Line
+	1650 5500 1800 5500
+Wire Wire Line
+	1800 5500 1800 6100
+Wire Wire Line
+	1800 6100 1450 6100
+Wire Wire Line
+	1450 6100 1450 6050
+Wire Wire Line
+	2700 5350 2700 5450
+Wire Wire Line
+	2800 5350 2800 5400
+Wire Wire Line
+	2800 5400 2900 5400
+Wire Wire Line
+	2900 5400 2900 5450
+Wire Wire Line
+	3000 5350 3000 5500
+Wire Wire Line
+	3000 5500 3150 5500
+Wire Wire Line
+	3150 5500 3150 6100
+Wire Wire Line
+	3150 6100 2800 6100
+Wire Wire Line
+	2800 6100 2800 6050
+Wire Wire Line
+	4000 5350 4000 5450
+Wire Wire Line
+	4100 5350 4100 5400
+Wire Wire Line
+	4100 5400 4200 5400
+Wire Wire Line
+	4200 5400 4200 5450
+Wire Wire Line
+	4300 5350 4300 5500
+Wire Wire Line
+	4300 5500 4450 5500
+Wire Wire Line
+	4450 5500 4450 6100
+Wire Wire Line
+	4450 6100 4100 6100
+Wire Wire Line
+	4100 6100 4100 6050
 $EndSCHEMATC

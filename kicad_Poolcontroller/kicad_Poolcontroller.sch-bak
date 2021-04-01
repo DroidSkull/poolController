@@ -796,7 +796,7 @@ F 3 "~" H 9750 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7350 4350 2    50   Output ~ 0
-5V
++5V
 $Comp
 L Connector_Generic:Conn_02x01 J1
 U 1 1 6063541F

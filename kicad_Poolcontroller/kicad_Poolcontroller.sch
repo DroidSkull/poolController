@@ -1050,23 +1050,10 @@ F 3 "" H 4050 1800 50  0001 C CNN
 	1    4050 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+12V #PWR0115
-U 1 1 606A4273
-P 3850 1800
-F 0 "#PWR0115" H 3850 1650 50  0001 C CNN
-F 1 "+12V" H 3865 1973 50  0000 C CNN
-F 2 "" H 3850 1800 50  0001 C CNN
-F 3 "" H 3850 1800 50  0001 C CNN
-	1    3850 1800
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4150 1600 4050 1600
 Wire Wire Line
 	4050 1600 4050 1800
-Wire Wire Line
-	3850 1300 3850 1800
 Wire Wire Line
 	3850 1300 4150 1300
 Wire Wire Line
@@ -1511,4 +1498,8 @@ F 3 "~" H 4150 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7250 4350 7350 4350
+Text HLabel 3850 1850 3    50   Input ~ 0
++5V
+Wire Wire Line
+	3850 1850 3850 1300
 $EndSCHEMATC

@@ -708,202 +708,67 @@ Connection ~ 5100 4600
 Wire Wire Line
 	5100 4600 5100 4700
 $Comp
-L Regulator_Linear:L7805 U4
-U 1 1 60538E17
-P 9350 4250
-F 0 "U4" H 9350 4492 50  0000 C CNN
-F 1 "L7805" H 9350 4401 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9375 4100 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 9350 4200 50  0001 C CNN
-	1    9350 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:LM317_3PinPackage U5
 U 1 1 60539C18
-P 10300 4250
-F 0 "U5" H 10300 4492 50  0000 C CNN
-F 1 "LM317" H 10300 4401 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 10300 4500 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 10300 4250 50  0001 C CNN
-	1    10300 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J2
-U 1 1 60581858
-P 6950 4250
-F 0 "J2" H 7000 4375 50  0000 C CNN
-F 1 "Conn_02x02_Odd_Even" H 7000 4376 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7000 4376 50  0001 C CNN
-F 3 "~" H 6950 4250 50  0001 C CNN
-	1    6950 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:L7809 U3
-U 1 1 60539486
-P 8050 4250
-F 0 "U3" H 8050 4492 50  0000 C CNN
-F 1 "L7809" H 8050 4401 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8075 4100 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8050 4200 50  0001 C CNN
-	1    8050 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:C C2
-U 1 1 60613901
-P 8450 4800
-F 0 "C2" H 8628 4800 50  0000 L CNN
-F 1 "47u" H 8628 4755 50  0001 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8450 4800 50  0001 C CNN
-F 3 "~" H 8450 4800 50  0001 C CNN
-	1    8450 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:C C1
-U 1 1 60612DCD
-P 7650 4800
-F 0 "C1" H 7828 4800 50  0000 L CNN
-F 1 "220u" H 7828 4755 50  0001 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7650 4800 50  0001 C CNN
-F 3 "~" H 7650 4800 50  0001 C CNN
-	1    7650 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:C C3
-U 1 1 6061E85E
-P 8950 4800
-F 0 "C3" H 9128 4800 50  0000 L CNN
-F 1 "220u" H 9128 4755 50  0001 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8950 4800 50  0001 C CNN
-F 3 "~" H 8950 4800 50  0001 C CNN
-	1    8950 4800
+P 9250 4300
+F 0 "U5" H 9250 4542 50  0000 C CNN
+F 1 "LM317" H 9250 4451 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 9250 4550 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 9250 4300 50  0001 C CNN
+	1    9250 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L pspice:C C4
 U 1 1 6061FCB8
-P 9750 4800
-F 0 "C4" H 9928 4800 50  0000 L CNN
-F 1 "47u" H 9928 4755 50  0001 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9750 4800 50  0001 C CNN
-F 3 "~" H 9750 4800 50  0001 C CNN
-	1    9750 4800
+P 8500 4750
+F 0 "C4" H 8678 4750 50  0000 L CNN
+F 1 "0.1u" H 8678 4705 50  0001 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8500 4750 50  0001 C CNN
+F 3 "~" H 8500 4750 50  0001 C CNN
+	1    8500 4750
 	1    0    0    -1  
 $EndComp
-Text HLabel 7350 4350 2    50   Output ~ 0
-+5V
-$Comp
-L Connector_Generic:Conn_02x01 J1
-U 1 1 6063541F
-P 6950 5250
-F 0 "J1" H 7000 5375 50  0000 C CNN
-F 1 "Conn_02x01" H 7000 5376 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 6950 5250 50  0001 C CNN
-F 3 "~" H 6950 5250 50  0001 C CNN
-	1    6950 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 5250 7650 5050
-Wire Wire Line
-	9750 5050 9750 5250
-Wire Wire Line
-	9750 5250 9350 5250
-Connection ~ 7650 5250
-Wire Wire Line
-	8450 5050 8450 5250
-Connection ~ 8450 5250
-Wire Wire Line
-	8450 5250 8050 5250
-Wire Wire Line
-	8950 5050 8950 5250
-Connection ~ 8950 5250
-Wire Wire Line
-	8950 5250 8450 5250
-Wire Wire Line
-	7650 4550 7650 4250
-Wire Wire Line
-	7650 4250 7750 4250
-Wire Wire Line
-	7650 4250 7250 4250
-Connection ~ 7650 4250
-Wire Wire Line
-	8350 4250 8450 4250
-Wire Wire Line
-	8450 4250 8450 4550
-Connection ~ 8450 4250
-Wire Wire Line
-	8950 4250 8950 4550
-Connection ~ 8950 4250
-Wire Wire Line
-	8950 4250 9050 4250
-Text HLabel 9700 4100 1    50   Input ~ 0
-+5V
-Wire Wire Line
-	6750 5250 6700 5250
-Wire Wire Line
-	6700 4250 6750 4250
-Wire Wire Line
-	6700 4350 6750 4350
-Wire Wire Line
-	6700 4350 6700 4250
-Wire Wire Line
-	9650 4250 9750 4250
-Wire Wire Line
-	9750 4250 9750 4550
-Wire Wire Line
-	9750 4250 9850 4250
-Connection ~ 9750 4250
 $Comp
 L Device:R R9
 U 1 1 606B34ED
-P 10300 5050
-F 0 "R9" H 10370 5096 50  0000 L CNN
-F 1 "220R" H 10370 5005 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10230 5050 50  0001 C CNN
-F 3 "~" H 10300 5050 50  0001 C CNN
-	1    10300 5050
+P 9250 5100
+F 0 "R9" H 9320 5146 50  0000 L CNN
+F 1 "220R" H 9320 5055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9180 5100 50  0001 C CNN
+F 3 "~" H 9250 5100 50  0001 C CNN
+	1    9250 5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R10
 U 1 1 606B3F3F
-P 10750 4500
-F 0 "R10" H 10680 4454 50  0000 R CNN
-F 1 "360R" H 10680 4545 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10680 4500 50  0001 C CNN
-F 3 "~" H 10750 4500 50  0001 C CNN
-	1    10750 4500
+P 9700 4550
+F 0 "R10" H 9630 4504 50  0000 R CNN
+F 1 "360R" H 9630 4595 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9630 4550 50  0001 C CNN
+F 3 "~" H 9700 4550 50  0001 C CNN
+	1    9700 4550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10300 4550 10300 4750
+	9250 4600 9250 4800
 Wire Wire Line
-	10750 4650 10750 4750
+	9700 4700 9700 4800
 Wire Wire Line
-	10750 4750 10300 4750
-Connection ~ 10300 4750
+	9700 4800 9250 4800
+Connection ~ 9250 4800
 Wire Wire Line
-	10300 4750 10300 4900
+	9250 4800 9250 4950
 Wire Wire Line
-	9750 5250 10300 5250
+	9250 5300 9250 5250
 Wire Wire Line
-	10300 5250 10300 5200
-Connection ~ 9750 5250
+	9550 4300 9700 4300
 Wire Wire Line
-	10600 4250 10750 4250
-Wire Wire Line
-	10750 4250 10750 4350
-Text HLabel 10850 4250 2    50   Output ~ 0
+	9700 4300 9700 4400
+Text HLabel 10400 4300 2    50   Output ~ 0
 +3.3V
-Wire Wire Line
-	10750 4250 10950 4250
-Connection ~ 10750 4250
+Connection ~ 9700 4300
 $Comp
 L Relay:SANYOU_SRD_Form_C K5
 U 1 1 602B11FC
@@ -917,15 +782,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 1250 5750 50  0001
 $EndComp
 Text HLabel 6700 800  1    50   Input ~ 0
 +12V
-Wire Wire Line
-	7250 5250 7350 5250
-Wire Wire Line
-	6700 5250 6700 4350
-Connection ~ 6700 4350
-Wire Wire Line
-	8450 4250 8950 4250
-Wire Wire Line
-	9750 4100 9750 4250
 $Comp
 L power:+12V #PWR0109
 U 1 1 60669E3B
@@ -952,23 +808,6 @@ F 3 "" H 2800 2050 50  0001 C CNN
 	1    2800 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8050 4550 8050 5250
-Connection ~ 8050 5250
-Wire Wire Line
-	8050 5250 7650 5250
-Wire Wire Line
-	9350 4550 9350 5250
-Connection ~ 9350 5250
-Wire Wire Line
-	9350 5250 8950 5250
-Text HLabel 9800 4100 1    50   Output ~ 0
-+5v
-Wire Wire Line
-	9850 4100 9850 4250
-Connection ~ 9850 4250
-Wire Wire Line
-	9850 4250 10000 4250
 Text HLabel 2850 750  1    50   Input ~ 0
 +5V
 Text HLabel 4550 750  1    50   Input ~ 0
@@ -994,36 +833,6 @@ Wire Wire Line
 	3950 1100 3950 1200
 Wire Wire Line
 	3950 1200 4150 1200
-$Comp
-L power:GND #PWR0112
-U 1 1 6075529D
-P 7350 5350
-F 0 "#PWR0112" H 7350 5100 50  0001 C CNN
-F 1 "GND" H 7355 5177 50  0000 C CNN
-F 2 "" H 7350 5350 50  0001 C CNN
-F 3 "" H 7350 5350 50  0001 C CNN
-	1    7350 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 5350 7350 5250
-Connection ~ 7350 5250
-Wire Wire Line
-	7350 5250 7650 5250
-$Comp
-L power:+12V #PWR0113
-U 1 1 6076366C
-P 6700 5350
-F 0 "#PWR0113" H 6700 5200 50  0001 C CNN
-F 1 "+12V" H 6715 5523 50  0000 C CNN
-F 2 "" H 6700 5350 50  0001 C CNN
-F 3 "" H 6700 5350 50  0001 C CNN
-	1    6700 5350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6700 5350 6700 5250
-Connection ~ 6700 5250
 $Comp
 L Relay:SANYOU_SRD_Form_C K7
 U 1 1 602B161C
@@ -1496,10 +1305,68 @@ F 3 "~" H 4150 3650 50  0001 C CNN
 	1    4150 3650
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7250 4350 7350 4350
 Text HLabel 3850 1850 3    50   Input ~ 0
 +5V
 Wire Wire Line
 	3850 1850 3850 1300
+$Comp
+L pspice:C C?
+U 1 1 60A744EB
+P 10250 4750
+F 0 "C?" H 10428 4750 50  0000 L CNN
+F 1 "10u" H 10428 4705 50  0001 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 10250 4750 50  0001 C CNN
+F 3 "~" H 10250 4750 50  0001 C CNN
+	1    10250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J1
+U 1 1 60A76341
+P 7900 4300
+F 0 "J1" H 7950 4425 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 7950 4426 50  0001 C CNN
+F 2 "" H 7900 4300 50  0001 C CNN
+F 3 "~" H 7900 4300 50  0001 C CNN
+	1    7900 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 4300 8500 4300
+Wire Wire Line
+	8500 4300 8500 4500
+Connection ~ 8500 4300
+Wire Wire Line
+	8500 4300 8950 4300
+Wire Wire Line
+	8200 4400 8250 4400
+Wire Wire Line
+	8250 4400 8250 5300
+Wire Wire Line
+	8250 5300 8500 5300
+Wire Wire Line
+	8500 5300 8500 5000
+Connection ~ 8500 5300
+Wire Wire Line
+	8500 5300 9250 5300
+Wire Wire Line
+	10250 4300 10250 4500
+Wire Wire Line
+	9700 4300 10250 4300
+Wire Wire Line
+	10250 5000 10250 5300
+Wire Wire Line
+	10250 5300 9250 5300
+Connection ~ 9250 5300
+Wire Wire Line
+	10400 4300 10250 4300
+Connection ~ 10250 4300
+Text HLabel 7600 4300 0    50   Input ~ 0
++5V
+Text HLabel 7600 4400 0    50   Input ~ 0
+GND
+Wire Wire Line
+	7600 4300 7700 4300
+Wire Wire Line
+	7600 4400 7700 4400
 $EndSCHEMATC

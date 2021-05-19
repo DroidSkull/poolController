@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
+Title "pcb_servoAttiny"
+Date "2021-05-19"
 Rev ""
 Comp ""
 Comment1 ""
@@ -889,8 +889,8 @@ $Comp
 L Connector_Generic:Conn_01x04 J4
 U 1 1 607CD9BA
 P 2350 4000
-F 0 "J4" H 2268 3575 50  0000 C CNN
-F 1 "Conn_01x04" H 2268 3666 50  0000 C CNN
+F 0 "J4" H 2350 3600 50  0000 C CNN
+F 1 "RF " H 2329 3700 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2350 4000 50  0001 C CNN
 F 3 "~" H 2350 4000 50  0001 C CNN
 	1    2350 4000

@@ -407,7 +407,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 6050 1950 6050
 Text HLabel 2750 5400 3    50   Input ~ 0
-+3.3V
++5V
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 607CD9BA
@@ -532,17 +532,6 @@ Text HLabel 3200 5750 3    50   Input ~ 0
 +5V
 Wire Wire Line
 	3200 5750 3200 5650
-$Comp
-L MCU_Microchip_ATtiny:ATtiny85-20SU U1
-U 1 1 610A19D1
-P 1900 2350
-F 0 "U1" H 1500 3000 50  0000 R CNN
-F 1 "ATtiny85" H 1700 2900 50  0000 R CNN
-F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 1900 2350 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 1900 2350 50  0001 C CNN
-	1    1900 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1900 1700 1900 1750
 Text HLabel 9400 2900 2    50   Output ~ 0
@@ -661,4 +650,15 @@ F 3 "" H 2100 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1950 1150 2100 1150
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U4
+U 1 1 6108C5C1
+P 1900 2350
+F 0 "U4" H 1371 2396 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 1371 2305 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 1900 2350 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 1900 2350 50  0001 C CNN
+	1    1900 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

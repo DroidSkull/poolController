@@ -21,17 +21,19 @@ void loop()
 {
   if (SerialBT.available())
   {
-    digitalWrite(led_status, HIGH);
     entrada = SerialBT.read();
+
+    if (entrada != '0')
+      digitalWrite(led_status, HIGH);
+    else {
+      digitalWrite(led_status, LOW);
+    }
 
     if (entrada == 'A')
       digitalWrite(led_data, HIGH);
 
     if (entrada == 'a')
       digitalWrite(led_data, LOW);
-  }
-  else {
-    digitalWrite(led_status, LOW);
   }
 }
 
@@ -44,4 +46,4 @@ void loop()
   delay(100);
   digitalWrite(led_data, LOW);
   delay(100);
-}*/
+  }*/

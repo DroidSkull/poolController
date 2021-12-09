@@ -6,8 +6,12 @@
 
 BluetoothSerial SerialBT;
 
-#define led_status 22
 #define led_data 2
+#define led_status 22
+#define transistor_1 23
+#define transistor_2 32
+#define transistor_3 34
+//#define transistor_4 
 
 char entrada;
 void setup()
@@ -15,6 +19,11 @@ void setup()
   SerialBT.begin("ESP32");
   pinMode(led_data, OUTPUT);
   pinMode(led_status, OUTPUT);
+  pinMode(transistor_1, OUTPUT);
+  pinMode(transistor_2, OUTPUT);
+  pinMode(transistor_3, OUTPUT);
+  //pinMode(transistor_1, OUTPUT);
+  
 }
 
 void loop()
@@ -28,16 +37,47 @@ void loop()
     else {
       digitalWrite(led_status, LOW);
     }
-
+//---------------------------------------
     if (entrada == 'A')
-      digitalWrite(led_data, HIGH);
+      digitalWrite(transistor_1, HIGH);
+      recebeu_dados();
 
     if (entrada == 'a')
-      digitalWrite(led_data, LOW);
+      digitalWrite(transistor_1, LOW);
+      recebeu_dados();
+//---------------------------------------
+
+    if (entrada == 'B')
+      digitalWrite(transistor_2, HIGH);
+      recebeu_dados();
+
+    if (entrada == 'b')
+      digitalWrite(transistor_2, LOW);
+      recebeu_dados();
+
+//---------------------------------------
+
+    if (entrada == 'C')
+      digitalWrite(transistor_1, HIGH);
+      recebeu_dados();
+
+    if (entrada == 'c')
+      digitalWrite(transistor_1, LOW);
+      recebeu_dados();
+//---------------------------------------
+
+    //if (entrada == 'B')
+      //digitalWrite(transistor_2, HIGH);
+      //recebeu_dados();
+
+    //if (entrada == 'b')
+      //digitalWrite(transistor_2, LOW);
+      //recebeu_dados();
+//---------------------------------------
   }
 }
 
-/*void led_data(){
+void recebeu_dados(){
   digitalWrite(led_data, HIGH);
   delay(100);
   digitalWrite(led_data, LOW);
@@ -46,4 +86,4 @@ void loop()
   delay(100);
   digitalWrite(led_data, LOW);
   delay(100);
-  }*/
+  }
